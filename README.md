@@ -42,7 +42,7 @@
 git clone https://github.com/MOxFIVE/hexo-theme-yelee.git themes/yelee
 ```
 
-Change theme field in Hexo root's _config.yml file. 
+Change theme field in Hexo root's \_config.yml file.
 
 ```
 theme: yelee
@@ -56,21 +56,23 @@ git pull
 ```
 
 ### New Features [DEMO](http://moxfive.xyz/yelee/new-features.html)
-| - |                En               |
-|:-:|:-------------------------------:|
-| 1 |  Flexible table of contents      |
-| 2 |  Transparent & Random background |
-| 3 |  Scrolling button                |
-| 4 |  Copyright info.                 |
-| 5 |  Post navigation button          |
-| 6 |  Site counter                    |
-| 7 |  i18n, multi-language          |
-| 8 |  Local Site Search           |
-| 9 |  Load Comment dynamically    |
+
+|  -  |               En                |
+| :-: | :-----------------------------: |
+|  1  |   Flexible table of contents    |
+|  2  | Transparent & Random background |
+|  3  |        Scrolling button         |
+|  4  |         Copyright info.         |
+|  5  |     Post navigation button      |
+|  6  |          Site counter           |
+|  7  |      i18n, multi-language       |
+|  8  |        Local Site Search        |
+|  9  |    Load Comment dynamically     |
 
 ### Configuration
 
 #### Internationalization
+
 Use internationalization to present your site in different languages.
 
 https://hexo.io/docs/internationalization.html
@@ -85,31 +87,33 @@ language: en
 
 ##### Available Languages
 
-| Code           | -                     | -        | Contributor(s) |
-|----------------|:-----------------------:|:----------:|:--------------:|
-| **en**         | English               | 英语     |     MOxFIVE    |
-| **zh-Hans**    | Chinese (Simplified)  | 大陆简体 |     MOxFIVE    |
-| **zh-Hant-HK** | Chinese (Traditional) | 港澳繁體 |     MOxFIVE    |
-| **zh-Hant-TW** | Chinese (Traditional) | 台灣正體 |     MOxFIVE    |
+| Code           |           -           |    -     | Contributor(s) |
+| -------------- | :-------------------: | :------: | :------------: |
+| **en**         |        English        |   英语   |    MOxFIVE     |
+| **zh-Hans**    | Chinese (Simplified)  | 大陆简体 |    MOxFIVE     |
+| **zh-Hant-HK** | Chinese (Traditional) | 港澳繁體 |    MOxFIVE     |
+| **zh-Hant-TW** | Chinese (Traditional) | 台灣正體 |    MOxFIVE     |
 
 > **Any Contribution is Welcome！**
 
 #### 0. Post Excerpt
-There are two ways to show excerpt in homepage. 
+
+There are two ways to show excerpt in homepage.
 
 - a: <!-- more -->
 
-``` diff
+```diff
 title: Hello World
 date: 2015-12-03 00:00:00
 ---
-<Excerpt in index> 
+<Excerpt in index>
 + <!-- more -->
 <The rest of contents文>
 ```
+
 - b: description in Front-matter
 
-``` diff
+```diff
 title: Hello World
 date: 2015-12-03 00:00:00
 + description: "Welcome to Hexo! This is your very first post."
@@ -121,11 +125,9 @@ date: 2015-12-03 00:00:00
 
 > Set the value of description with quotes to avoid unexpected error `:`
 
-
-
 #### 1. About Page:
-cd to your hexo folder and run this code:
 
+cd to your hexo folder and run this code:
 
 ```
 hexo new page about
@@ -137,19 +139,17 @@ hexo new page about
 hexo new page tags
 ```
 
-> Post with several categories [issue#4](https://github.com/MOxFIVE/hexo-theme-yelee/issues/4) 
+> Post with several categories [issue#4](https://github.com/MOxFIVE/hexo-theme-yelee/issues/4)
 
 #### 3. Background image:
 
-Find or change background images in folder: 
+Find or change background images in folder:
 
 > `/yelee/source/background/`
 
 Setting in `themes/yelee/_config.yml`:
 
-`
-background_image: 5
-`
+`background_image: 5`
 
 - Default value is 5, free to modify the number
 
@@ -162,6 +162,7 @@ background_image: 5
 > Optimize images with PhotoShop (JPEG, Quality 0, Progressive)
 
 #### 4. Highlight Style:
+
 Set inline_code to style highlight text & Chose a highlight theme for code block.
 
 ```
@@ -176,8 +177,8 @@ Set `on: true` to enable this feature
 highlight theme from https://github.com/chriskempson/tomorrow-theme
 
 #### 5. Comment:
-Disqus, duoshuo and youyan is supported, enable ONE of them in theme's "_config.yml".
 
+Disqus, duoshuo and youyan is supported, enable ONE of them in theme's "\_config.yml".
 
 #### 6. Table of Contents:
 
@@ -185,10 +186,9 @@ Remove toc and the button via putting `toc: false` before "---" at [post].md.
 
 Hide toc in default
 
-> Set `toc: false` in `yelee/_config.yml`. 
+> Set `toc: false` in `yelee/_config.yml`.
 
-(*Set `toc: true` in front-matter to show it in certain post*)
-
+(_Set `toc: true` in front-matter to show it in certain post_)
 
 #### 7. Copyright info.:
 
@@ -196,15 +196,16 @@ Hide this via putting `original: false` to post's front-matter.
 
 Hide Copyright info. in default
 
-> Set `copyright: false` in `yelee/_config.yml`. 
+> Set `copyright: false` in `yelee/_config.yml`.
 
-(*Set `original: true` in front-matter to show it in certain post*)
+(_Set `original: true` in front-matter to show it in certain post_)
 
 #### 8. 404 Page:
 
 ```
 hexo new page 404
 ```
+
 And then set `permalink: /404` in `/source/404/index.md` front matter.
 
 #### 9. RSS Feed:
@@ -221,4 +222,25 @@ Baidu: [hexo-generator-baidu-sitemap](https://github.com/coneycode/hexo-generato
 
 The Path is `/yelee/source/apple-touch-icon.png`
 
-[Recommended size: 180*180](https://realfavicongenerator.net/blog/apple-touch-icon-the-good-the-bad-the-ugly/)
+[Recommended size: 180\*180](https://realfavicongenerator.net/blog/apple-touch-icon-the-good-the-bad-the-ugly/)
+
+#### 12. Local Site Search
+
+Install plugin:
+
+```bash
+npm install --save hexo-generator-search
+```
+
+Add config in [./\_config.yml](./_config.yml):
+
+```yaml
+# Local Site Search | 本地站内搜索
+## Insatall below plugin to take effect | 使用搜索需先安装对应插件
+## https://github.com/PaicHyperionDev/hexo-generator-search
+search:
+  on: true
+  onload: false
+  ## true: get search.xml file when the page has loaded
+  ## false: get the file when search box gets focus
+```
