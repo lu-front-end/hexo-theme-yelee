@@ -16,6 +16,7 @@
       <div class="article-info article-info-post">
         <%- partial('post/category') %>
         <%- partial('post/tag') %>
+        <%- partial('post/wordcount') %>
         <div class="clearfix"></div>
       </div>
       <% } %>
@@ -43,6 +44,7 @@
       <% } %>
       <%- partial('post/category') %>
       <%- partial('post/tag') %>
+      <%- partial('post/wordcount') %>
       <% if (index && (post.description || post.excerpt)){ %>
         <p class="article-more-link">
           <a href="<%- url_for(post.path) %>#more"><%= __('index.more') %> >></a>

@@ -14,8 +14,17 @@ toc:
   show: Show
 
 visit_counter:
-  site: Site Visitors
-  page: Page Hits
+  site_pv: Site Hits
+  site_uv: Site Visitors
+  page_pv: Page Hits
+  page_uv: Page Visitors
+
+unit:
+  word: words
+  time: minutes
+article:
+  wordcount: Word Count
+  readcount: Read Count
 
 copyright_info:
   title: Title
@@ -44,6 +53,6 @@ tooltip:
 
 tag_cloud:
   already: " "
-  categories: Categories, 
+  categories: Categories,
   total: " "
   tags: Tags

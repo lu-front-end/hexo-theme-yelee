@@ -13,8 +13,17 @@ toc:
   show: 顯示目錄
 
 visit_counter:
-  site: 本站到訪數
-  page: 本頁閱讀量
+  site_pv: 本站訪問量
+  site_uv: 本站訪客數
+  page_pv: 本頁閱讀量
+  page_uv: 本頁訪客數
+
+unit:
+  word: 字
+  time: 分
+article:
+  wordcount: 字數統計
+  readcount: 閱讀時長
 
 copyright_info:
   title: 本文標題

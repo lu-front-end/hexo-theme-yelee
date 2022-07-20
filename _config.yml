@@ -53,7 +53,7 @@ subnav:
   CSDN: "https://blog.csdn.net/dbkernel"
   掘金: "https://juejin.im/user/5e9d3ed251882538083fed1f/posts"
   #Coding: ""
-  #网易云音乐: "netease"
+  网易云音乐: "https://music.163.com/#/user/home?id=2109792568"
   #虾米音乐: "xiami"
   #bilibili: ""
   #AcFun: ""
@@ -63,8 +63,8 @@ subnav:
   #Google: "#"
   #Twitter: "#"
   #LinkedIn: "#"
-  QQ: "82168616"
-  微信: "dbexpert"
+  QQ: "https://dbkernel-1306518848.cos.ap-beijing.myqcloud.com/qq/qq-mysql-group.jpeg"
+  微信: "https://dbkernel.github.io/images/wechat-gzh.jpeg"
   #PayPal: "#"
   #StackOverflow: "#"
   #CodePen: ""
@@ -114,9 +114,6 @@ youyan:
 
 # >>> Style Customisation 样式自定义 <<<
 
-# 文章太长，截断按钮文字(在需要截断的行增加此标记：<!--more-->)
-excerpt_link: more
-
 # Background | 背景
 ## "5": show images form bg-1.jpg to bg-5.jpg in `/yelee/source/background/`
 ## "5": 显示`/yelee/source/background/`文件夹中 bg-1.jpg 到 bg-5.jpg 这5张图片
@@ -156,6 +153,7 @@ left_col_width: 300
 
 # Copyright info. of post | 文末版权信息
 copyright: true
+author: DBKernel
 
 # Table of contents | 文章目录
 toc:
@@ -272,6 +270,12 @@ visit_counter:
   on: true
   site_visit: true
   page_visit: true
+
+# wordcount
+post_count:
+  enable: true
+  wordcount: true  # 文章字数统计
+  min2read: true  # 阅读时长预估
 
 # GitHub Repo Widget
 # https://github.com/hustcc/GitHub-Repo-Widget.js
