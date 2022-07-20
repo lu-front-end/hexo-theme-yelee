@@ -21,16 +21,16 @@
       <% } %>
     <% } %>
     <div class="article-entry" itemprop="articleBody">
-      <% if (index && (post.description || post.excerpt)){ %>
-          <% if (post.description){ %>
-              <%- post.description %>
-          <% } else { %>
-              <%- post.excerpt %>
-          <% } %>
+      <% if (index){ %>
+        <% if (post.description){ %>
+          <%- post.description %>
+        <% } else if (post.excerpt) { %>
+            <%- post.excerpt %>
+        <% } %>
       <% } else { %>
-          <% if (is_page()){ %>
-              <%- partial('_partial/page') %>
-          <% } %>
+        <% if (is_page()){ %>
+          <%- partial('_partial/page') %>
+        <% } %>
         <%- post.content %>
       <% } %>
     </div>
