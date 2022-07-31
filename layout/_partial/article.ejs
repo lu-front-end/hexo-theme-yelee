@@ -16,6 +16,7 @@
       <div class="article-info article-info-post">
         <%- partial('post/category') %>
         <%- partial('post/tag') %>
+        <br></br> <!--字数统计另起一行-->
         <%- partial('post/wordcount') %>
         <div class="clearfix"></div>
       </div>
@@ -44,6 +45,7 @@
       <% } %>
       <%- partial('post/category') %>
       <%- partial('post/tag') %>
+      <br></br> <!--字数统计另起一行-->
       <%- partial('post/wordcount') %>
       <% if (index && (post.description || post.excerpt)){ %>
         <p class="article-more-link">
